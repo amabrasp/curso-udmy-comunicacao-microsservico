@@ -1,0 +1,410 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.amqp",
+    "module": "spring-amqp",
+    "version": "3.0.10",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.0.13"
+          }
+        },
+        {
+          "group": "org.springframework.retry",
+          "module": "spring-retry",
+          "version": {
+            "requires": "2.0.4"
+          },
+          "excludes": [
+            {
+              "group": "org.springframework",
+              "module": "*"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-amqp-3.0.10.jar",
+          "url": "spring-amqp-3.0.10.jar",
+          "size": 153464,
+          "sha512": "e61e85b9be18a7cfe43c378b9945ba055413784ca8cc04c16caa666f959bf2b7582a053e9fc855dc6d75377278cb8330c155493e9954a39331e6009edc32fc30",
+          "sha256": "38132cf4275299b8d904d7358903cdecea8d9376430792022abb5229021a0a98",
+          "sha1": "d49db960358daa40d97bfdbe8cf1a30d9572ca98",
+          "md5": "efd9c284e61abf9d44ba25e6af3ea9ea"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.0.13"
+          }
+        },
+        {
+          "group": "org.springframework.retry",
+          "module": "spring-retry",
+          "version": {
+            "requires": "2.0.4"
+          },
+          "excludes": [
+            {
+              "group": "org.springframework",
+              "module": "*"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-amqp-3.0.10.jar",
+          "url": "spring-amqp-3.0.10.jar",
+          "size": 153464,
+          "sha512": "e61e85b9be18a7cfe43c378b9945ba055413784ca8cc04c16caa666f959bf2b7582a053e9fc855dc6d75377278cb8330c155493e9954a39331e6009edc32fc30",
+          "sha256": "38132cf4275299b8d904d7358903cdecea8d9376430792022abb5229021a0a98",
+          "sha1": "d49db960358daa40d97bfdbe8cf1a30d9572ca98",
+          "md5": "efd9c284e61abf9d44ba25e6af3ea9ea"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-amqp-3.0.10-javadoc.jar",
+          "url": "spring-amqp-3.0.10-javadoc.jar",
+          "size": 541216,
+          "sha512": "cda0e29fc347ca401cd4b1d888a466908423e6041ea1ef2e6069e0969e51586ab87eface5b0346d39634576cfac4a098ccd2631bbbf018550d7870d1f56a9b55",
+          "sha256": "93d4969f07264610e75d0b79fce80a4e120122dda6e2a66524efc30aa4263350",
+          "sha1": "588ae8ed80cfdc0c185d2c4714e726580d5bdca3",
+          "md5": "d99ed926f5a2ce2d64bd67b311147983"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-amqp-3.0.10-sources.jar",
+          "url": "spring-amqp-3.0.10-sources.jar",
+          "size": 138603,
+          "sha512": "7725cfb9c138135bc3d7639001fa68435419a11c839c05509d2ef69f643ee1aef660a07d31a1e00f71ad0e8112dacd74daefd327b9b02d60279b6bbecef77a8c",
+          "sha256": "680fa5cd2698625c0744bc0e89b4f9e85d1701aff1f1db472f41d0f76ff3df5f",
+          "sha1": "a0a1b8e37e8f25ca38cbcdc71133baf7e825817a",
+          "md5": "2d63340e81f0ff2401536c4c44afd71e"
+        }
+      ]
+    },
+    {
+      "name": "optionalApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-messaging",
+          "version": {
+            "requires": "6.0.13"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-oxm",
+          "version": {
+            "requires": "6.0.13"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "6.0.13"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-core",
+          "version": {
+            "requires": "2.14.3"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.14.3"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-annotations",
+          "version": {
+            "requires": "2.14.3"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-xml",
+          "version": {
+            "requires": "2.14.3"
+          }
+        },
+        {
+          "group": "org.springframework.data",
+          "module": "spring-data-commons",
+          "version": {
+            "requires": "3.0.11"
+          },
+          "excludes": [
+            {
+              "group": "org.springframework",
+              "module": "*"
+            },
+            {
+              "group": "io.micrometer",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "com.jayway.jsonpath",
+          "module": "json-path",
+          "version": {
+            "requires": "2.7.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-amqp-3.0.10.jar",
+          "url": "spring-amqp-3.0.10.jar",
+          "size": 153464,
+          "sha512": "e61e85b9be18a7cfe43c378b9945ba055413784ca8cc04c16caa666f959bf2b7582a053e9fc855dc6d75377278cb8330c155493e9954a39331e6009edc32fc30",
+          "sha256": "38132cf4275299b8d904d7358903cdecea8d9376430792022abb5229021a0a98",
+          "sha1": "d49db960358daa40d97bfdbe8cf1a30d9572ca98",
+          "md5": "efd9c284e61abf9d44ba25e6af3ea9ea"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "org.springframework.amqp",
+          "name": "spring-amqp-optional",
+          "version": "3.0.10"
+        }
+      ]
+    },
+    {
+      "name": "optionalRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-messaging",
+          "version": {
+            "requires": "6.0.13"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-oxm",
+          "version": {
+            "requires": "6.0.13"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "6.0.13"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-core",
+          "version": {
+            "requires": "2.14.3"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.14.3"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-annotations",
+          "version": {
+            "requires": "2.14.3"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-xml",
+          "version": {
+            "requires": "2.14.3"
+          }
+        },
+        {
+          "group": "org.springframework.data",
+          "module": "spring-data-commons",
+          "version": {
+            "requires": "3.0.11"
+          },
+          "excludes": [
+            {
+              "group": "org.springframework",
+              "module": "*"
+            },
+            {
+              "group": "io.micrometer",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "com.jayway.jsonpath",
+          "module": "json-path",
+          "version": {
+            "requires": "2.7.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-amqp-3.0.10.jar",
+          "url": "spring-amqp-3.0.10.jar",
+          "size": 153464,
+          "sha512": "e61e85b9be18a7cfe43c378b9945ba055413784ca8cc04c16caa666f959bf2b7582a053e9fc855dc6d75377278cb8330c155493e9954a39331e6009edc32fc30",
+          "sha256": "38132cf4275299b8d904d7358903cdecea8d9376430792022abb5229021a0a98",
+          "sha1": "d49db960358daa40d97bfdbe8cf1a30d9572ca98",
+          "md5": "efd9c284e61abf9d44ba25e6af3ea9ea"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "org.springframework.amqp",
+          "name": "spring-amqp-optional",
+          "version": "3.0.10"
+        }
+      ]
+    },
+    {
+      "name": "providedApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "spring-amqp-3.0.10.jar",
+          "url": "spring-amqp-3.0.10.jar",
+          "size": 153464,
+          "sha512": "e61e85b9be18a7cfe43c378b9945ba055413784ca8cc04c16caa666f959bf2b7582a053e9fc855dc6d75377278cb8330c155493e9954a39331e6009edc32fc30",
+          "sha256": "38132cf4275299b8d904d7358903cdecea8d9376430792022abb5229021a0a98",
+          "sha1": "d49db960358daa40d97bfdbe8cf1a30d9572ca98",
+          "md5": "efd9c284e61abf9d44ba25e6af3ea9ea"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "org.springframework.amqp",
+          "name": "spring-amqp-provided",
+          "version": "3.0.10"
+        }
+      ]
+    },
+    {
+      "name": "providedRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-amqp-3.0.10.jar",
+          "url": "spring-amqp-3.0.10.jar",
+          "size": 153464,
+          "sha512": "e61e85b9be18a7cfe43c378b9945ba055413784ca8cc04c16caa666f959bf2b7582a053e9fc855dc6d75377278cb8330c155493e9954a39331e6009edc32fc30",
+          "sha256": "38132cf4275299b8d904d7358903cdecea8d9376430792022abb5229021a0a98",
+          "sha1": "d49db960358daa40d97bfdbe8cf1a30d9572ca98",
+          "md5": "efd9c284e61abf9d44ba25e6af3ea9ea"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "org.springframework.amqp",
+          "name": "spring-amqp-provided",
+          "version": "3.0.10"
+        }
+      ]
+    }
+  ]
+}
